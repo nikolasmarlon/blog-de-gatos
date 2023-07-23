@@ -10,31 +10,26 @@
 
 :root{
     font-size: 62.5%;
+
+    /*Cores*/
+    --azul-500: #065E7C;
+    --preto-500: #202024;
+    --preto-300: #121214;
+    --branco: #FFF;
+    --branco-op-20: hsla(0, 0%, 100%, 0.20);
+                          
 }
 
 
 html, body, input{
-    font-family: sans-serif;
+    font-family: 'Mulish', sans-serif;
 }
 
 body{
     font-size: 1.6rem;
 }
 
-
-#app > * {
-    border: 2px solid red;
-    
-}
-
-
-.container{
-    padding: 2.2rem 3rem;
-    background-color: green;
-    min-width: 100%;
-}
-
-.avatar {
+.avatar, .logo {
     width: 4.2rem;
     height: 4.3rem;
 
@@ -47,6 +42,7 @@ header{
     align-items: center;
     gap: 2.6rem;
     padding: 1.6rem 2.8rem;
+    background-color: var(--azul-500);
 }
 
 header form{
@@ -63,16 +59,92 @@ header form{
 
 .input-container input{
     width: 100%;
-    background-color: blue;
+    background-color: var(--branco-op-20);
     border: 0;
-    padding: 1.6rem;
-    border-radius: .6rem;
+    padding: 1.2rem 1.4rem;
+    border-radius: .4rem;
+    font-size: 1.6rem;
+    color: var(--branco);
+    font-weight: 600;
+   
     
 }
 
+.input-container input::placeholder{
+    color: var(--branco);
+}
 
 
+main section img{
+    width: 100%;
+}
 
-img{
-    max-width: 100%;
+main section h1{
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: .8rem;
+    line-height: 1.6;
+}
+
+.curtidas ul{
+    display: flex;
+    list-style: none;
+    gap: 1.2rem;
+}
+
+.curtidas img{
+    width: 4rem;
+    height: 4rem;  
+    margin-bottom: 3rem;  
+}
+
+main section p{
+    font-size: 1.6rem;
+    line-height: 1.6 ;
+}
+
+
+.container{
+    padding: 3rem 2.6rem;
+}
+
+.relacionados{
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+
+aside h1{
+    font-size: 2.4rem;
+    line-height: 1.6;
+    margin-bottom: 3.2rem;
+    font-weight: 700;
+    
+}
+aside h2:first-of-type{
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin-bottom: 1.3rem;
+    font-weight: 700;
+}
+
+aside img{
+    border-radius: 0.5rem;
+    height: 8.4rem;
+    width: 15rem;
+}
+
+
+.lateral{
+    display: grid;
+    grid-template-columns: 15rem 1fr;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+footer{
+    text-align: center;
+    background-color: var(--azul-500);
+    color: var(--branco);
 }
