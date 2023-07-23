@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+:root{
+    font-size: 62.5%;
+}
+
+
+html, body, input{
+    font-family: sans-serif;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+
+#app > * {
+    border: 2px solid red;
+    
+}
+
+
+.container{
+    padding: 2.2rem 3rem;
+    background-color: green;
+    min-width: 100%;
+}
+
+.avatar {
+    width: 4.2rem;
+    height: 4.3rem;
+
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    gap: 2.6rem;
+    padding: 1.6rem 2.8rem;
+}
+
+header form{
+    flex: 1;
+}
+
+
+.input-container label{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.input-container input{
+    width: 100%;
+    background-color: blue;
+    border: 0;
+    padding: 1.6rem;
+    border-radius: .6rem;
+    
+}
+
+
+
+
+img{
+    max-width: 100%;
+}
