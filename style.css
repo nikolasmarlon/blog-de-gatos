@@ -29,10 +29,24 @@ body{
     font-size: 1.6rem;
 }
 
-#app {
-    height: 100vh;
+
+
+header{
+    height: 7.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.6rem 2.8rem;       
+    background-color: var(--azul-500);
 }
 
+header div{
+    flex: 1;
+    display: flex;
+    align-items: center;    
+    gap: 2.6rem;
+    max-width: 120rem;
+}
 .avatar, .logo {
     width: 4.2rem;
     height: 4.3rem;
@@ -41,13 +55,6 @@ body{
     border-radius: 50%;
 }
 
-header{
-    display: flex;
-    align-items: center;
-    gap: 2.6rem;
-    padding: 1.6rem 2.8rem;       
-    background-color: var(--azul-500);
-}
 
 header form{
     flex: 1;
@@ -76,6 +83,10 @@ header form{
 
 .input-container input::placeholder{
     color: var(--branco);
+}
+
+.container {
+    padding: 3rem 2.2rem;
 }
 
 
@@ -108,9 +119,7 @@ main section p{
 }
 
 
-.container{
-    padding: 3rem 2.6rem;
-}
+
 
 .relacionados{
     display: flex;
@@ -148,10 +157,14 @@ aside img{
 }
 
 footer{
-    text-align: center;
+    height: 6.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--azul-500);
     color: var(--branco);
     padding: 2.6rem 1.6rem;
+    line-height: 1.6;
 }
 
 
@@ -162,19 +175,13 @@ footer{
             "A A A"
             "B B B"            
             "B B B"            
-            "C C C";
-
-
-            min-width:  100%;
-            background-color: red;
+            "C C C";           
     }
 
     header{
         grid-area: A;
        
-    }
-
-    
+    }   
 
     main{
         grid-area: B;
@@ -182,7 +189,12 @@ footer{
         grid-template-areas: 
             "A A B"
             "A A B"
+            
         ;
+
+       max-width: 120rem;
+       margin: 0 auto;
+       padding: 4.4rem 0;
     }    
 
     main aside{
@@ -195,9 +207,6 @@ footer{
 
     footer{
         grid-area: C;
-    }
-
-
-   
+    }   
     
 }
