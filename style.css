@@ -181,7 +181,11 @@ footer{
     header{
         grid-area: A;
        
-    }   
+    }  
+
+    .container {
+        padding: 0;
+    }
 
     main{
         grid-area: B;
@@ -195,6 +199,7 @@ footer{
        max-width: 120rem;
        margin: 0 auto;
        padding: 4.4rem 0;
+       gap: 3.4rem;
     }    
 
     main aside{
@@ -203,10 +208,22 @@ footer{
 
     main section {
         grid-area: A;
+        
     }
 
     footer{
         grid-area: C;
-    }   
+    }  
+    
+    main section img{
+        border-radius: 0.5rem;
+    }
+
+    #post-titulo{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3rem;
+    }
+    
     
 }
